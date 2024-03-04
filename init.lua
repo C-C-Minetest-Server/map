@@ -32,3 +32,8 @@ minetest.register_on_joinplayer(function(player)
 		minimap_radar = true
 	})
 end)
+
+-- Ensure API compactibility
+map = {
+    update_hud_flags = function() return true end
+}
